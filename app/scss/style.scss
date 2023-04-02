@@ -92,6 +92,7 @@ header {
 
     .nav-item {
         margin: 16px 0;
+
         a {
             color: $main-color;
         }
@@ -109,5 +110,74 @@ header {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         border: 1.5px solid #292D32
+    }
+}
+
+.main {
+
+    .main-header {
+        padding-top: 80px;
+        padding-left: 15px;
+        @include flex($align: start);
+        flex-direction: column;
+        gap: 28px;
+        background: #F2F2F2;
+
+        .main-header_new {
+            font: $header-font;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 133.69%;
+            color: #838383;
+        }
+
+        .main-header_title {
+            font: $header-font;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 35px;
+            color: $main-color;
+        }
+
+        .main-description {
+            @include flex();
+            gap: 15px;
+
+            .main-description_button {
+                @include flex();
+                width: 45px;
+                height: 45px;
+                background: #33A9FF;
+                border: none;
+                border-radius: 50%;
+            }
+
+            .main-description_text {
+                font: $header-font;
+                font-size: 15px;
+                line-height: 30px;
+                color: $main-color;
+            }
+        }
+    }
+
+    .main-swipe {
+        padding: 10px 25px 10px 23px;
+        background: #F2F2F2;
+    }
+
+    .main-profit {
+        background-color: #F9F9F9;
+        background: url(../assets/img/main/backstageLaptops.png) no-repeat right;
+        height: 196px;
+
+        .main-profit_text {
+            padding: 59px 0px 59px 15px;
+            font: $header-font;
+            font-size: 20px;
+            line-height: 130%;
+            color: $main-color;
+            max-width: 136px;
+        }
     }
 }
