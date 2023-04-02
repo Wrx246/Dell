@@ -114,6 +114,7 @@ header {
 }
 
 .main {
+    background-color: #F9F9F9;
 
     .main-header {
         padding-top: 80px;
@@ -250,12 +251,111 @@ header {
                 line-height: 133.69%;
                 color: $second-color;
             }
-    
+
             .catalog-item_title {
                 font: $header-font;
                 font-size: 20px;
                 line-height: 150%;
                 color: $main-color;
+            }
+        }
+    }
+}
+
+.asc {
+    background: #F2F2F2;
+    padding-bottom: 120px;
+
+    .asc-header {
+        @include flex($align: start);
+        flex-direction: column;
+        padding: 101px 0px 0px 15px;
+        position: relative;
+
+        .asc-button {
+            padding-bottom: 35px;
+        }
+
+        .asc-header_title {
+            font: $header-font;
+            font-size: 30px;
+            line-height: 50px;
+            color: $main-color;
+            padding-bottom: 20px;
+        }
+
+        .asc-header_text {
+            font: $text-font;
+            font-size: 15px;
+            line-height: 150%;
+            color: $second-color;
+            padding-bottom: 30px;
+            max-width: 336px;
+        }
+
+        .asc-header_laptop {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .asc-header_quality {
+            padding-top: 35px;
+            z-index: -2;
+        }
+    }
+
+    .asc-list {
+        padding-top: 23px;
+        @include flex();
+        flex-direction: column;
+        gap: 20px;
+
+        .asc-item {
+            background: $main-color;
+            min-width: 345px;
+            max-width: 345px;
+            border-radius: 10px;
+            position: relative;
+
+            .asc-item_vector {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .asc-item_logo {
+                background: #343A41;
+                border-radius: 9px;
+                width: 50px;
+                height: 50px;
+                @include flex();
+                margin: 15px;
+            }
+
+            .asc-item_description {
+                padding-left: 15px;
+                padding-bottom: 15px;
+                @include flex($align: start);
+                flex-direction: column;
+                gap: 10px;
+
+                .asc-item_title {
+                    font: $second-font;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    max-width: 296px;
+                }
+
+                .asc-item_text {
+                    font: $second-font;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #B7B7B7;
+                    max-width: 319px;
+                    max-height: 60px;
+                }
             }
         }
     }
