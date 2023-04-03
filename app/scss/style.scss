@@ -115,6 +115,13 @@ header {
 
 .main {
     background-color: #F9F9F9;
+    position: relative;
+
+    .dell-top {
+        position: absolute;
+        top: 18px;
+        left: 32px;
+    }
 
     .main-header {
         padding-top: 80px;
@@ -181,6 +188,24 @@ header {
         line-height: 30px;
         color: $main-color;
     }
+
+    .black {
+        background: $main-color;
+        width: 32.18px;
+        height: 32.18px;
+        margin: 12px;
+    }
+
+}
+.float {
+    position: relative;
+    top: -15px;
+    right: 20px;
+    width: 60.18px;
+    height: 60.18px;
+    border: none;
+    border-radius: 50%;
+    background: #FFFF;
 }
 
 .catalog {
@@ -362,9 +387,11 @@ header {
 }
 
 .news {
+    background: #F5F5F5;
+    padding-bottom: 120px;
 
     .news-header {
-        margin: 120px 25px 40px 15px;
+        padding: 120px 25px 40px 15px;
         @include flex($align: start);
         flex-direction: column;
 
@@ -393,11 +420,55 @@ header {
         gap: 20px;
 
         .news-item {
-            overflow: hidden;
-            background: url(../assets/img/news/news1.png) no-repeat;
+            position: relative;
             width: 324px;
             height: 293px;
-            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            .news-date {
+                position: absolute;
+                right: -21px;
+                top: 53px;
+                padding: 21.62px 0.21px 16.02px 0.21px;
+                min-width: 39.2px;
+                min-height: 76.06px;
+                text-align: center;
+                background: #FFFFFF;
+                box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.06);
+                border-radius: 15px;
+
+                .news-date_num {
+                    font: $header-font;
+                    color: $main-color;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 13px;
+                }
+
+                .news-date_text {
+                    font: $header-font;
+                    color: $main-color;
+                    font-weight: 100;
+                    font-size: 18px;
+                    line-height: 13px;
+                }
+            }
+
+            .news-item_bottom {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-bottom-right-radius: 48px;
+                @include flex($align: start);
+                height: 143px;
+                width: 100%;
+                background: #FFFF;
+            }
+
+            .news-item-data {
+                height: 143px;
+            }
 
             .news-item_title {
                 font: $header-font;
@@ -405,15 +476,31 @@ header {
                 font-weight: 700;
                 font-size: 25px;
                 line-height: 100%;
+                margin: 21px 0px 10px 20px;
             }
 
             .news-item_text {
                 font: $header-font;
                 color: $main-color;
-                font-weight: 700;
+                font-weight: 400;
                 font-size: 14px;
                 line-height: 150%;
+                max-width: 251px;
+                margin-left: 20px;
             }
+        }
+
+        .first-news {
+            background: url(../assets/img/news/news1.png) no-repeat left top;
+            float: bottom;
+        }
+
+        .second-news {
+            background: url(../assets/img/news/news4.png) no-repeat left top;
+        }
+
+        .third-news {
+            background: url(../assets/img/news/news5.png) no-repeat left top;
         }
     }
 }
@@ -456,6 +543,7 @@ header {
             .contacts-item_img {
                 @include flex($justify: start);
                 gap: 8.38px;
+
                 img {
                     width: 18.73px;
                     height: 18.73px;
