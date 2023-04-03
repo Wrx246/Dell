@@ -360,3 +360,165 @@ header {
         }
     }
 }
+
+.news {
+
+    .news-header {
+        margin: 120px 25px 40px 15px;
+        @include flex($align: start);
+        flex-direction: column;
+
+        .news-header_title {
+            font: $header-font;
+            font-size: 30px;
+            line-height: 35px;
+            color: $main-color;
+            margin-bottom: 20px;
+        }
+
+        .news-header_text {
+            font: $text-font;
+            font-weight: 300;
+            font-size: 14.5px;
+            line-height: 150%;
+            color: #838383;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .news-list {
+        @include flex();
+        flex-direction: column;
+        gap: 20px;
+
+        .news-item {
+            overflow: hidden;
+            background: url(../assets/img/news/news1.png) no-repeat;
+            width: 324px;
+            height: 293px;
+            border-bottom-left-radius: 50px;
+
+            .news-item_title {
+                font: $header-font;
+                color: $main-color;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 100%;
+            }
+
+            .news-item_text {
+                font: $header-font;
+                color: $main-color;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+footer {
+    background: #F2F2F2;
+    position: relative;
+
+    .dell-background {
+        position: absolute;
+        bottom: 15.67px;
+        right: 0;
+    }
+
+    hr {
+        max-width: 345px;
+    }
+}
+
+.footer-links {
+    padding-top: 30.55px;
+    @include flex($align: start);
+    flex-direction: column;
+    gap: 28.16px;
+
+    .footer-logo {
+        width: 100%;
+        @include flex($align: center);
+    }
+
+    .footer-links_bar {
+        @include flex($justify: space-between, $align: start);
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0px 37px 30px 15px;
+    }
+
+    .footer-bar {
+
+
+        .footer-bar_title {
+            font: $header-font;
+            font-size: 18px;
+            line-height: 21px;
+            color: $main-color;
+        }
+
+        .footer-bar_list {
+            @include flex($align: start);
+            flex-direction: column;
+            flex-wrap: wrap;
+            font: $text-font;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            padding-top: 15px;
+
+            .footer-bar_item {
+                padding-bottom: 10px;
+                max-width: 140px;
+
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        min-width: 300px;
+        max-height: 109px;
+    }
+}
+
+.footer-contacts {
+    text-align: left;
+    padding-top: 31px;
+    padding-left: 16px;
+
+    .footer-contancts_list {
+        @include flex($align: start);
+        flex-direction: column;
+        gap: 20px;
+
+        .footer-contacts_item {
+            .footer-item_title {
+                font: $text-font;
+                font-size: 15px;
+                line-height: 133.69%;
+                color: $second-color;
+            }
+
+            .footer-item_text {
+                font: $text-font;
+                font-size: 15px;
+                line-height: 150%;
+                color: $main-color;
+            }
+        }
+    }
+
+    .footer-contacts_links {
+        @include flex($justify: start, $align: start);
+        flex-direction: row;
+        gap: 29.82px;
+        padding: 30px 0px 29.82px 16px;
+    }
+}
