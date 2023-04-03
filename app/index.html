@@ -396,38 +396,63 @@
                 </article>
             </div>
         </section>
+        <section id="contacts" class="contacts">
+            <aside class="contacts-header">
+                <p class="contacts-header_title">Наши контакты</p>
+                <p class="contacts-header_text">
+                    Вы можете связаться с нашим онлайн-консультантом
+                </p>
+            </aside>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <div class="contacts-item_img">
+                        <img src="./assets/img/logos/location.png" alt="location" />
+                        <p class="contacts-item_title">Адрес</p>
+                    </div>
+                    <p class="contacts-item_text">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+                </li>
+                <li class="contacts-item">
+                    <div class="contacts-item_img">
+                        <img src="./assets/img/logos/call-calling.png" alt="location" />
+                        <p class="contacts-item_title">E-mail</p>
+                    </div>
+                    <p class="contacts-item_text">dell_ru@gmail.com</p>
+                </li>
+                <li class="contacts-item">
+                    <div class="contacts-item_img">
+                        <img src="./assets/img/logos/sms.png" alt="location" />
+                        <p class="contacts-item_title">Телефон</p>
+                    </div>
+                    <p class="contacts-item_text">+7 495 737-06-01<br /> +7 495 737-06-01</p>
+                </li>
+            </ul>
+            <div class="contacts-links">
+                <a href="#">
+                    <img src="./assets/img/logos/facebook.png" alt="facebook" />
+                </a>
+                <a href="#">
+                    <img src="./assets/img/logos/whatsapp.png" alt="whatsapp" />
+                </a>
+            </div>
+            <div class="iphone">
+                <img class="iphone-body" src="./assets/img/main/iPhone 13 Pro Max-small.png" alt="iphone" />
+            </div>
+        </section>
         <section id="form" class="form">
             <p class="form-title white">Оставьте заявку</p>
             <p class="form-text white">Оставьте свой номер, и мы перезвоним Вам.</p>
             <form class="form-body">
                 <label class="form-input">
-                    <input 
-                    class="input__field" 
-                    required
-                    minlength="3"
-                    maxlength="32"
-                    pattern="[A-Za-z]{1,32}"
-                    type="text" 
-                    placeholder=" " />
+                    <input class="input__field" required minlength="3" maxlength="32" pattern="[A-Za-z]{1,32}"
+                        type="text" placeholder=" " />
                     <span class="input__label">Ваше имя</span>
                 </label>
                 <label class="form-input">
-                    <input 
-                    class="input__field" 
-                    required
-                    pattern="[7-9]{1}[0-9]{9}" 
-                    type="tel" 
-                    placeholder=" " />
+                    <input class="input__field" required pattern="[7-9]{1}[0-9]{9}" type="tel" placeholder=" " />
                     <span class="input__label">Номер телефона</span>
                 </label>
                 <label class="form-input comment">
-                    <input 
-                    minlength="3"
-                    maxlength="60"
-                    required
-                    class="input__field" 
-                    type="text" 
-                    placeholder=" " />
+                    <input minlength="3" maxlength="60" required class="input__field" type="text" placeholder=" " />
                     <span class="input__label">Комментарий</span>
                 </label>
                 <div class="main-description">
@@ -506,7 +531,7 @@
         </section>
         <hr />
         <section class="footer-contacts">
-            <ul class="footer-contancts_list">
+            <ul class="footer-contacts_list">
                 <li class="footer-contacts_item">
                     <p class="footer-item_title">Адрес</p>
                     <p class="footer-item_text">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
