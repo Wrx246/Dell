@@ -396,6 +396,48 @@
                 </article>
             </div>
         </section>
+        <section id="form" class="form">
+            <p class="form-title white">Оставьте заявку</p>
+            <p class="form-text white">Оставьте свой номер, и мы перезвоним Вам.</p>
+            <form class="form-body">
+                <label class="form-input">
+                    <input 
+                    class="input__field" 
+                    required
+                    minlength="3"
+                    maxlength="32"
+                    pattern="[A-Za-z]{1,32}"
+                    type="text" 
+                    placeholder=" " />
+                    <span class="input__label">Ваше имя</span>
+                </label>
+                <label class="form-input">
+                    <input 
+                    class="input__field" 
+                    required
+                    pattern="[7-9]{1}[0-9]{9}" 
+                    type="tel" 
+                    placeholder=" " />
+                    <span class="input__label">Номер телефона</span>
+                </label>
+                <label class="form-input comment">
+                    <input 
+                    minlength="3"
+                    maxlength="60"
+                    required
+                    class="input__field" 
+                    type="text" 
+                    placeholder=" " />
+                    <span class="input__label">Комментарий</span>
+                </label>
+                <div class="main-description">
+                    <button id="order" type="submit" class="main-description_button">
+                        <img src="./assets/img/logos/Description.png" alt="description" />
+                    </button>
+                    <span class="main-description_text white">Заказать</span>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="footer-links">
