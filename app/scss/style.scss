@@ -10,8 +10,11 @@ header {
     background: #FFFF;
 
     .logo {
+        padding: 15px 0px 15px 15px;
+
         img {
-            padding: 15px 0px 15px 15px;
+            width: 60px;
+            height: 60px;
         }
     }
 
@@ -121,6 +124,8 @@ header {
         position: absolute;
         top: 18px;
         left: 32px;
+        max-width: 293px;
+        max-height: 77px;
     }
 
     .main-header {
@@ -145,6 +150,7 @@ header {
             font-size: 30px;
             line-height: 35px;
             color: $main-color;
+            padding-top: 5px;
         }
     }
 
@@ -197,6 +203,7 @@ header {
     }
 
 }
+
 .float {
     position: relative;
     top: -15px;
@@ -215,7 +222,7 @@ header {
     margin-bottom: 120.1px;
 
     .catalog-header {
-        margin: 120px 25px 40px 15px;
+        margin: 120px 25px 30px 15px;
         @include flex($align: start);
         flex-direction: column;
 
@@ -243,14 +250,12 @@ header {
         background: #EEEEEE;
         border-radius: 10px;
         width: 345px;
-        height: auto;
-        min-height: 290.9px;
-        @include flex($justify: space-between, $align: start);
+        min-height: 275px;
+        @include flex($justify: space-around, $align: start);
         flex-direction: column;
         padding: 15px 22px 20px 21px;
 
         .catalog-item_img {
-            @include flex($justify: space-between, $align: start);
             position: relative;
 
             .catalog-item_number {
@@ -263,7 +268,14 @@ header {
                 line-height: 150%;
                 color: $main-color;
             }
+
+            img {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
         }
+
 
         .catalog-item_description {
             @include flex($align: start);
