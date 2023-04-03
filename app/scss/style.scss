@@ -418,6 +418,86 @@ header {
     }
 }
 
+.contacts {
+    background: #F9F9F9;
+    position: relative;
+
+    .contacts-header {
+        padding: 101px 123px 40px 30px;
+        @include flex($align: start);
+        flex-direction: column;
+
+        .contacts-header_title {
+            font: $header-font;
+            font-size: 30px;
+            line-height: 35px;
+            color: $main-color;
+            margin-bottom: 20px;
+        }
+
+        .contacts-header_text {
+            font: $text-font;
+            font-weight: 300;
+            font-size: 14.5px;
+            line-height: 150%;
+            color: #838383;
+            width: 100%;
+        }
+    }
+
+    .contacts-list {
+        @include flex($align: start);
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 30px;
+
+        .contacts-item {
+
+            .contacts-item_img {
+                @include flex($justify: start);
+                gap: 8.38px;
+                img {
+                    width: 18.73px;
+                    height: 18.73px;
+                }
+            }
+
+            .contacts-item_title {
+                font: $text-font;
+                font-size: 15px;
+                line-height: 133.69%;
+                color: $second-color;
+            }
+
+            .contacts-item_text {
+                max-width: 255px;
+                font: $text-font;
+                line-height: 150%;
+                color: $main-color;
+                margin-left: 26.64px;
+            }
+        }
+    }
+
+    .contacts-links {
+        @include flex($justify: start, $align: start);
+        flex-direction: row;
+        gap: 12.68px;
+        padding: 30.48px 0px 59.84px 30px;
+
+        img {
+            width: 26.16px;
+            height: 26.16px;
+        }
+    }
+
+    .iphone {
+        position: absolute;
+        right: 21.71px;
+        bottom: -46.24px;
+    }
+}
+
 .form {
     background: $main-color;
     padding: 60px 26px 60px 30px;
@@ -563,7 +643,7 @@ footer {
     padding-top: 31px;
     padding-left: 16px;
 
-    .footer-contancts_list {
+    .footer-contacts_list {
         @include flex($align: start);
         flex-direction: column;
         gap: 20px;
