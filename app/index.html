@@ -28,12 +28,38 @@
                 </a>
             </nav>
         </div>
+        <div class="desktop-menu">
+            <div class="desktop-menu_square"></div>
+            <ul class="desktop-menu_list">
+                <li class="desktop-menu_item">
+                    <div class="desktop-item_img">
+                        <img src="./assets/img/logos/profile.png" alt="profile" />
+                    </div>
+                    <p>Мария</p>
+                </li>
+                <li class="desktop-menu_item">
+                    <a href="#">Личный кабинет</a>
+                </li>
+                <li class="desktop-menu_item">
+                    <a href="#">История заказов</a>
+                </li>
+                <li class="desktop-menu_item">
+                    <a href="#">Персональные предложения</a>
+                </li>
+                <li class="desktop-menu_item">
+                    <a href="#">Выйти</a>
+                </li>
+            </ul>
+        </div>
         <section class="navigation">
             <a id="search" href="#" rel="search">
                 <img src="./assets/img/logos/fi-rr-search.png" alt="search" />
             </a>
             <ul>
-                <li class="navigation-item">
+                <li>
+                    <p>Мария</p>
+                </li>
+                <li id="profile" class="navigation-item">
                     <a href="#" rel="profile">
                         <img src="./assets/img/logos/profile.png" alt="profile" />
                     </a>
@@ -179,10 +205,25 @@
                         <span class="main-description_text">Подробнее</span>
                     </div>
                     <div class="main-swipe">
-                        <div class="main-swipe_item">
-                            <img srcset="./assets/img/main/headerLaptopBig.png 1920w, 
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img srcset="./assets/img/main/headerLaptopBig.png 1920w, 
                     ./assets/img/main/headerLaptopBig.png 900w,
                     ./assets/img/main/headerLaptop.png 375w" src="./assets/img/main/headerLaptop.png" alt="laptop" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img srcset="./assets/img/main/headerLaptopBig.png 1920w, 
+                    ./assets/img/main/headerLaptopBig.png 900w,
+                    ./assets/img/main/headerLaptop.png 375w" src="./assets/img/main/headerLaptop.png" alt="laptop" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img srcset="./assets/img/main/headerLaptopBig.png 1920w, 
+                    ./assets/img/main/headerLaptopBig.png 900w,
+                    ./assets/img/main/headerLaptop.png 375w" src="./assets/img/main/headerLaptop.png" alt="laptop" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -767,13 +808,10 @@
                     </a>
                 </div>
                 <div class="iphone">
-                    <img 
-                    class="iphone-body" 
-                    srcset="./assets/img/main/iPhone-13-Pro-Max.png 1920w, 
+                    <img class="iphone-body" srcset="./assets/img/main/iPhone-13-Pro-Max.png 1920w, 
                     ./assets/img/main/iPhone-13-Pro-Max.png 900w,
                     ./assets/img/main/iPhone 13 Pro Max-small.png 375w"
-                    src="./assets/img/main/iPhone 13 Pro Max-small.png" 
-                    alt="iphone" />
+                        src="./assets/img/main/iPhone 13 Pro Max-small.png" alt="iphone" />
                 </div>
             </section>
             <section id="form" class="form">
