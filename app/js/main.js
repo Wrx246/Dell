@@ -15,3 +15,32 @@ function burgerMenu() {
 }
 
 burgerMenu();
+
+function hoverMenu() {
+    let profile = document.getElementById("profile");
+    let menu = document.querySelector(".desktop-menu");
+
+    profile.addEventListener("mouseenter", () => {
+        menu.classList.toggle("active");
+    })
+
+    document.addEventListener("click", () => {
+        menu.classList.remove("active");
+    })
+}
+
+hoverMenu();
+
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    spaceBetween: 100,
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+    mousewhell: true
+});
+
+const swipe = document.querySelector('.swiper').swiper;
+
+swipe.slideNext();
