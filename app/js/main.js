@@ -1,17 +1,26 @@
 function burgerMenu() {
-    let hamburger = document.querySelector('.hamburger');
-    let navMenu = document.querySelector('.nav-menu');
+    let hamburger = document.querySelector(".hamburger");
+    let navMenu = document.querySelector(".nav-menu");
+    let overlay = document.querySelector("overlay");
 
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
+        overlay.classList.toggle('active')
     })
 
     document.querySelectorAll(".nav-link")
         .forEach(n => n.addEventListener("click", () => {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
+            overlay.classList.remove('active')
         }))
+
+    document.addEventListener("scroll", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        overlay.classList.remove('active')
+    })
 }
 
 burgerMenu();
